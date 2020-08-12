@@ -9,6 +9,7 @@ boton.addEventListener('click', function(){
     let error = parseFloat(document.querySelector('#error').value);
 
     table.innerHTML = '';
+    let it = 0;
 
     if(superior <= inferior){
         alert('El límite superior debe ser menor al límite inferior');
@@ -18,11 +19,11 @@ boton.addEventListener('click', function(){
         alert('El valor objetivo debe estar entre el límite superior e inferior');
         document.querySelector('#objetivo').value = '';
     }else{
-        puntoMedio(superior, inferior, objetivo, error);
+        puntoMedio(superior, inferior, objetivo, error, it);
     }
 })
 
-const puntoMedio = (superior, inferior, objetivo, error) => {
+const puntoMedio = (superior, inferior, objetivo, error, it=0) => {
     let sup = superior;
     let inf = inferior;
     let probable = (superior + inferior) / 2;
