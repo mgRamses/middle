@@ -8,6 +8,8 @@ boton.addEventListener('click', function(){
     let objetivo = parseFloat(document.querySelector('#objetivo').value);
     let error = parseFloat(document.querySelector('#error').value);
 
+    table.innerHTML = '';
+
     if(superior <= inferior){
         alert('El límite superior debe ser menor al límite inferior');
         document.querySelector('#superior').value = '';
