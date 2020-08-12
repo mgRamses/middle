@@ -10,6 +10,7 @@ boton.addEventListener('click', function(){
 
     table.innerHTML = '';
     let it = 0;
+    console.log(it);
 
     if(superior <= inferior){
         alert('El límite superior debe ser menor al límite inferior');
