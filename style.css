@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    background: rgb(240, 240, 240);
+}
+header{
+    height: 40px;
+    width: 100%;
+    background: rgb(42, 127, 206);
+    color: white;
+    position: absolute;
+    top:0;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.container{
+    min-width: 700px;
+    min-height: 400px;
+    background: linear-gradient(0deg, rgba(27,64,156,1) 0%, rgba(40,118,180,1) 65%, rgba(46,141,190,1) 100%);
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+.inputs{
+    order: solid 1px orange;
+    
+    padding: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs input, button{
+    width: 140px;
+}
+
+input{
+    padding: 6px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(42, 127, 206);
+    margin-top: 6px;
+    margin-bottom: 14px;
+    border-radius: 3px;
+}
+
+button{
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 4px;
+    width: 280px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+
+table{
+    border-collapse: collapse;
+    border-top: solid 1px white;
+    width: 100%;
+    margin-top: 30px;
+}
+
+th, td{
+    text-align: center;
+    padding: 8px;
+}
+tr{
+   border-bottom: 1px solid rgb(142, 194, 236);
+}

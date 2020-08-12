@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Aproximación del Punto Medio</title>
+</head>
+<body>
+    <header>
+        Aproximación del Punto Medio
+    </header>
+    <div class="container">
+        <div class="inputs">
+            <div class="control">
+                <label for="">Límite superior</label><br>
+                <input type="text" id="superior">
+            </div>       
+            <div class="control">
+                <label for="">Límite inferior</label><br>
+                <input type="text" id="inferior">
+            </div>
+            <div class="control">
+                <label for="">Objetivo</label><br>
+                <input type="text" id="objetivo">
+            </div>
+            <div class="control">
+                <label for="">Error</label><br>
+                <input type="text" id="error">
+            </div>
+            
+        </div>
+        <button class="play">Iniciar</button>
+            <table>
+                <tr>
+                    <th>Iteración</th>
+                    <th>Valor 1</th>
+                    <th>Valor 2</th>
+                    <th>Resultado</th>
+                </tr>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
